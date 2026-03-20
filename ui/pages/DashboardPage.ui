@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DashboardPage</class>
+ <widget class="QWidget" name="DashboardPage">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>900</width><height>600</height></rect></property>
+  <property name="windowTitle"><string>Dashboard</string></property>
+
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing"><number>16</number></property>
+   <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property>
+   <property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+
+   <!-- Metric cards row -->
+   <item>
+    <layout class="QHBoxLayout" name="metricsRow">
+     <property name="spacing"><number>16</number></property>
+
+     <item>
+      <widget class="QFrame" name="cardActiveMembers">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout"><property name="leftMargin"><number>20</number></property><property name="topMargin"><number>18</number></property><property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>18</number></property>
+        <item><widget class="QLabel" name="lblActiveMembersValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>28</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblActiveMembersTitle"><property name="text"><string>👥  Active Members</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QFrame" name="cardActiveSubs">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout"><property name="leftMargin"><number>20</number></property><property name="topMargin"><number>18</number></property><property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>18</number></property>
+        <item><widget class="QLabel" name="lblActiveSubsValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>28</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblActiveSubsTitle"><property name="text"><string>🔑  Active Subscriptions</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QFrame" name="cardTodayCheckins">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout"><property name="leftMargin"><number>20</number></property><property name="topMargin"><number>18</number></property><property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>18</number></property>
+        <item><widget class="QLabel" name="lblTodayCheckinsValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>28</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblTodayCheckinsTitle"><property name="text"><string>✅  Today's Check-ins</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QFrame" name="cardRevenue">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout"><property name="leftMargin"><number>20</number></property><property name="topMargin"><number>18</number></property><property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>18</number></property>
+        <item><widget class="QLabel" name="lblRevenueValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>28</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblRevenueTitle"><property name="text"><string>💰  Monthly Revenue</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QFrame" name="cardExpired">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout"><property name="leftMargin"><number>20</number></property><property name="topMargin"><number>18</number></property><property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>18</number></property>
+        <item><widget class="QLabel" name="lblExpiredValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>28</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblExpiredTitle"><property name="text"><string>⏰  Expired Subs</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+
+    </layout>
+   </item>
+
+   <!-- Bottom: chart + top members -->
+   <item>
+    <layout class="QHBoxLayout" name="bottomRow">
+     <property name="spacing"><number>16</number></property>
+
+     <item>
+      <widget class="QFrame" name="chartCard">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout" name="chartLayout">
+        <property name="leftMargin"><number>20</number></property><property name="topMargin"><number>16</number></property>
+        <property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>16</number></property>
+        <item><widget class="QLabel" name="chartTitle"><property name="text"><string>📈  Monthly Revenue</string></property><property name="font"><font><family>Segoe UI</family><pointsize>13</pointsize><weight>75</weight><bold>true</bold></font></property></widget></item>
+        <!-- Chart canvas is inserted here at runtime -->
+       </layout>
+      </widget>
+     </item>
+
+     <item>
+      <widget class="QFrame" name="topMembersCard">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <property name="minimumSize"><size><width>260</width><height>0</height></size></property>
+       <property name="maximumSize"><size><width>280</width><height>16777215</height></size></property>
+       <layout class="QVBoxLayout" name="topMembersLayout">
+        <property name="leftMargin"><number>20</number></property><property name="topMargin"><number>16</number></property>
+        <property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>16</number></property>
+        <item><widget class="QLabel" name="topMembersTitle"><property name="text"><string>🏆  Top Members</string></property><property name="font"><font><family>Segoe UI</family><pointsize>13</pointsize><weight>75</weight><bold>true</bold></font></property></widget></item>
+        <!-- Top members list inserted at runtime -->
+       </layout>
+      </widget>
+     </item>
+
+    </layout>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="statusLabel"><property name="text"><string/></property></widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
