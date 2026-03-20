@@ -1,0 +1,52 @@
+[
+    {
+        "member_id": "M001",
+        "full_name": "Nguyen Van An",
+        "phone": "0901234567",
+        "email": "vanan@email.com",
+        "dob": "1995-03-15",
+        "gender": "Male",
+        "join_date": "2025-01-01",
+        "status": "active"
+    },
+    {
+        "member_id": "M002",
+        "full_name": "Tran Thi Bich",
+        "phone": "0912345678",
+        "email": "thibich@email.com",
+        "dob": "1998-07-22",
+        "gender": "Female",
+        "join_date": "2025-01-15",
+        "status": "active"
+    },
+    {
+        "member_id": "M003",
+        "full_name": "Le Van Cuong",
+        "phone": "0923456789",
+        "email": "vancuong@email.com",
+        "dob": "1990-11-30",
+        "gender": "Male",
+        "join_date": "2025-02-01",
+        "status": "inactive"
+    },
+    {
+        "member_id": "M004",
+        "full_name": "Pham Thi Dung",
+        "phone": "0934567890",
+        "email": "thidung@email.com",
+        "dob": "2000-05-10",
+        "gender": "Female",
+        "join_date": "2025-02-10",
+        "status": "active"
+    },
+    {
+        "member_id": "M005",
+        "full_name": "NGUYEN TRUNG HIEU",
+        "phone": "0377323123",
+        "email": "xbyouku@gmail.com",
+        "dob": "2006-21-11",
+        "gender": "Male",
+        "join_date": "2024-24-2",
+        "status": "active"
+    }
+]
