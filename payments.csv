@@ -1,0 +1,4 @@
+payment_id,member_id,amount,method,date,note,related_subscription_id
+PAY0001,M001,799000,bank,2026-01-01,Quarterly Plus package,S001
+PAY0002,M002,299000,cash,2026-01-15,Monthly Basic package,S002
+PAY0003,M004,2500000,card,2026-02-10,Annual Premium package,S004
