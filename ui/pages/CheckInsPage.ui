@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CheckInsPage</class>
+ <widget class="QWidget" name="CheckInsPage">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>900</width><height>600</height></rect></property>
+  <property name="windowTitle"><string>Check-ins</string></property>
+
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing"><number>12</number></property>
+   <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property>
+   <property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+
+   <!-- Stats row -->
+   <item>
+    <layout class="QHBoxLayout" name="statsRow">
+     <property name="spacing"><number>16</number></property>
+     <item>
+      <widget class="QFrame" name="cardToday">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout"><property name="leftMargin"><number>20</number></property><property name="topMargin"><number>16</number></property><property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>16</number></property>
+        <item><widget class="QLabel" name="lblTodayValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>24</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblTodayTitle"><property name="text"><string>✅  Today's Check-ins</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="cardWeek">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout"><property name="leftMargin"><number>20</number></property><property name="topMargin"><number>16</number></property><property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>16</number></property>
+        <item><widget class="QLabel" name="lblWeekValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>24</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblWeekTitle"><property name="text"><string>📅  This Week</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="cardTotal">
+       <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+       <layout class="QVBoxLayout"><property name="leftMargin"><number>20</number></property><property name="topMargin"><number>16</number></property><property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>16</number></property>
+        <item><widget class="QLabel" name="lblTotalValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>24</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblTotalTitle"><property name="text"><string>🔢  Total Check-ins</string></property></widget></item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>0</height></size></property></spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="checkInButton">
+       <property name="text"><string>＋  New Check-in</string></property>
+       <property name="minimumSize"><size><width>140</width><height>44</height></size></property>
+       <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize><weight>63</weight></font></property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+
+   <!-- Table -->
+   <item>
+    <widget class="QTableWidget" name="checkinsTable">
+     <property name="selectionBehavior"><enum>QAbstractItemView::SelectRows</enum></property>
+     <property name="editTriggers"><set>QAbstractItemView::NoEditTriggers</set></property>
+     <property name="alternatingRowColors"><bool>true</bool></property>
+     <column><property name="text"><string>ID</string></property></column>
+     <column><property name="text"><string>Member ID</string></property></column>
+     <column><property name="text"><string>Member Name</string></property></column>
+     <column><property name="text"><string>Date</string></property></column>
+     <column><property name="text"><string>Time</string></property></column>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="statusLabel"><property name="text"><string/></property></widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
