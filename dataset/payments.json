@@ -1,0 +1,29 @@
+[
+    {
+        "payment_id": "PAY0001",
+        "member_id": "M001",
+        "amount": 799000,
+        "method": "bank",
+        "date": "2026-01-01",
+        "note": "Quarterly Plus package",
+        "related_subscription_id": "S001"
+    },
+    {
+        "payment_id": "PAY0002",
+        "member_id": "M002",
+        "amount": 299000,
+        "method": "cash",
+        "date": "2026-01-15",
+        "note": "Monthly Basic package",
+        "related_subscription_id": "S002"
+    },
+    {
+        "payment_id": "PAY0003",
+        "member_id": "M004",
+        "amount": 2500000,
+        "method": "card",
+        "date": "2026-02-10",
+        "note": "Annual Premium package",
+        "related_subscription_id": "S004"
+    }
+]
