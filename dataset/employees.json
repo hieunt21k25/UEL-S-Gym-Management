@@ -1,0 +1,20 @@
+[
+    {
+        "EmployeeId": "E001",
+        "EmployeeRole": "Admin",
+        "UserName": "admin",
+        "Password": "admin123"
+    },
+    {
+        "EmployeeId": "E002",
+        "EmployeeRole": "Staff",
+        "UserName": "staff01",
+        "Password": "staff123"
+    },
+    {
+        "EmployeeId": "E003",
+        "EmployeeRole": "Staff",
+        "UserName": "staff02",
+        "Password": "staff123"
+    }
+]
