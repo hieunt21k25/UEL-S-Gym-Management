@@ -1,0 +1,16 @@
+[
+    {
+        "user_id": "U001",
+        "username": "admin",
+        "email": "admin@gym.com",
+        "password": "admin123",
+        "role": "admin"
+    },
+    {
+        "user_id": "U002",
+        "username": "staff",
+        "email": "staff@gym.com",
+        "password": "staff123",
+        "role": "staff"
+    }
+]

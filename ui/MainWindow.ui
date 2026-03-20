@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>1200</width><height>760</height></rect></property>
+  <property name="minimumSize"><size><width>900</width><height>600</height></size></property>
+  <property name="windowTitle"><string>Gym Manager</string></property>
+
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="centralLayout">
+    <property name="spacing"><number>0</number></property>
+    <property name="leftMargin"><number>0</number></property>
+    <property name="topMargin"><number>0</number></property>
+    <property name="rightMargin"><number>0</number></property>
+    <property name="bottomMargin"><number>0</number></property>
+
+    <item>
+     <widget class="QWidget" name="overlayWidget">
+      <layout class="QHBoxLayout" name="rootLayout">
+       <property name="spacing"><number>0</number></property>
+       <property name="leftMargin"><number>0</number></property>
+       <property name="topMargin"><number>0</number></property>
+       <property name="rightMargin"><number>0</number></property>
+       <property name="bottomMargin"><number>0</number></property>
+
+    <!-- ══ SIDEBAR ══ -->
+    <item>
+     <widget class="QFrame" name="sidebar">
+      <property name="minimumSize"><size><width>220</width><height>0</height></size></property>
+      <property name="maximumSize"><size><width>220</width><height>16777215</height></size></property>
+      <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+
+      <layout class="QVBoxLayout" name="sidebarLayout">
+       <property name="spacing"><number>4</number></property>
+       <property name="leftMargin"><number>12</number></property>
+       <property name="topMargin"><number>28</number></property>
+       <property name="rightMargin"><number>12</number></property>
+       <property name="bottomMargin"><number>20</number></property>
+
+       <!-- Brand -->
+       <item>
+        <widget class="QLabel" name="brandLabel">
+         <property name="text"><string>UEL'S GYM</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>16</pointsize><weight>75</weight><bold>true</bold></font></property>
+        </widget>
+       </item>
+
+       <!-- User pill -->
+       <item>
+        <widget class="QFrame" name="userPill">
+         <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+         <layout class="QVBoxLayout" name="userPillLayout">
+          <property name="spacing"><number>2</number></property>
+          <property name="leftMargin"><number>12</number></property>
+          <property name="topMargin"><number>8</number></property>
+          <property name="rightMargin"><number>12</number></property>
+          <property name="bottomMargin"><number>8</number></property>
+          <item>
+           <widget class="QLabel" name="userNameLabel">
+            <property name="text"><string>—</string></property>
+            <property name="font"><font><family>Segoe UI</family><pointsize>11</pointsize><weight>63</weight></font></property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="userRoleLabel">
+            <property name="text"><string>—</string></property>
+            <property name="font"><font><family>Segoe UI</family><pointsize>9</pointsize><weight>75</weight><bold>true</bold></font></property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+
+       <!-- Section label -->
+       <item>
+        <widget class="QLabel" name="navSectionLabel">
+         <property name="text"><string>NAVIGATION</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>8</pointsize><weight>75</weight><bold>true</bold></font></property>
+        </widget>
+       </item>
+
+       <!-- Nav buttons -->
+       <item>
+        <widget class="QPushButton" name="btnDashboard">
+         <property name="text"><string>   📊   Dashboard</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize></font></property>
+         <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+         <property name="checkable"><bool>true</bool></property>
+         <property name="autoExclusive"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnMembers">
+         <property name="text"><string>   👥   Members</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize></font></property>
+         <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+         <property name="checkable"><bool>true</bool></property>
+         <property name="autoExclusive"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnPackages">
+         <property name="text"><string>   📦   Packages</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize></font></property>
+         <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+         <property name="checkable"><bool>true</bool></property>
+         <property name="autoExclusive"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnSubscriptions">
+         <property name="text"><string>   🔄   Subscriptions</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize></font></property>
+         <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+         <property name="checkable"><bool>true</bool></property>
+         <property name="autoExclusive"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnCheckins">
+         <property name="text"><string>   ✅   Check-ins</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize></font></property>
+         <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+         <property name="checkable"><bool>true</bool></property>
+         <property name="autoExclusive"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnPayments">
+         <property name="text"><string>   💳   Payments</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize></font></property>
+         <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+         <property name="checkable"><bool>true</bool></property>
+         <property name="autoExclusive"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnTrainers">
+         <property name="text"><string>   🏋   Trainers</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize></font></property>
+         <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+         <property name="checkable"><bool>true</bool></property>
+         <property name="autoExclusive"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnPlans">
+         <property name="text"><string>   📋   Training Plans</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize></font></property>
+         <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+         <property name="checkable"><bool>true</bool></property>
+         <property name="autoExclusive"><bool>true</bool></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnReports">
+         <property name="text"><string>   📈   Reports</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize></font></property>
+         <property name="minimumSize"><size><width>0</width><height>44</height></size></property>
+         <property name="checkable"><bool>true</bool></property>
+         <property name="autoExclusive"><bool>true</bool></property>
+        </widget>
+       </item>
+
+       <!-- Stretch -->
+       <item>
+        <spacer name="sidebarSpacer">
+         <property name="orientation"><enum>Qt::Vertical</enum></property>
+         <property name="sizeHint" stdset="0"><size><width>20</width><height>40</height></size></property>
+        </spacer>
+       </item>
+
+       <!-- Logout -->
+       <item>
+        <widget class="QPushButton" name="btnLogout">
+         <property name="text"><string>⏻   Logout</string></property>
+         <property name="font"><font><family>Segoe UI</family><pointsize>12</pointsize></font></property>
+         <property name="minimumSize"><size><width>0</width><height>42</height></size></property>
+        </widget>
+       </item>
+
+      </layout>
+     </widget>
+    </item>
+
+    <!-- ══ CONTENT AREA ══ -->
+    <item>
+     <widget class="QWidget" name="contentArea">
+      <layout class="QVBoxLayout" name="contentLayout">
+       <property name="spacing"><number>0</number></property>
+       <property name="leftMargin"><number>0</number></property>
+       <property name="topMargin"><number>0</number></property>
+       <property name="rightMargin"><number>0</number></property>
+       <property name="bottomMargin"><number>0</number></property>
+
+       <!-- Top bar -->
+       <item>
+        <widget class="QFrame" name="topBar">
+         <property name="minimumSize"><size><width>0</width><height>56</height></size></property>
+         <property name="maximumSize"><size><width>16777215</width><height>56</height></size></property>
+         <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+         <layout class="QHBoxLayout" name="topBarLayout">
+          <property name="leftMargin"><number>24</number></property>
+          <property name="topMargin"><number>0</number></property>
+          <property name="rightMargin"><number>24</number></property>
+          <property name="bottomMargin"><number>0</number></property>
+          <item>
+           <widget class="QLabel" name="pageTitleLabel">
+            <property name="text"><string>Dashboard</string></property>
+            <property name="font"><font><family>Segoe UI</family><pointsize>16</pointsize><weight>75</weight><bold>true</bold></font></property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="topBarSpacer">
+            <property name="orientation"><enum>Qt::Horizontal</enum></property>
+            <property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </item>
+
+       <!-- Page wrapper + stackedWidget -->
+       <item>
+        <widget class="QWidget" name="pageWrapper">
+         <layout class="QVBoxLayout" name="pageWrapperLayout">
+          <property name="leftMargin"><number>24</number></property>
+          <property name="topMargin"><number>16</number></property>
+          <property name="rightMargin"><number>24</number></property>
+          <property name="bottomMargin"><number>16</number></property>
+          <property name="spacing"><number>0</number></property>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="currentIndex"><number>0</number></property>
+            <widget class="QWidget" name="placeholderPage"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

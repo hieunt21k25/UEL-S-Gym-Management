@@ -1,0 +1,50 @@
+[
+    {
+        "sub_id": "S001",
+        "member_id": "M001",
+        "package_id": "P002",
+        "start_date": "2026-01-01",
+        "end_date": "2026-03-31",
+        "status": "cancelled"
+    },
+    {
+        "sub_id": "S002",
+        "member_id": "M002",
+        "package_id": "P001",
+        "start_date": "2026-01-15",
+        "end_date": "2026-02-14",
+        "status": "cancelled"
+    },
+    {
+        "sub_id": "S003",
+        "member_id": "M003",
+        "package_id": "P001",
+        "start_date": "2025-12-01",
+        "end_date": "2025-12-31",
+        "status": "expired"
+    },
+    {
+        "sub_id": "S004",
+        "member_id": "M004",
+        "package_id": "P003",
+        "start_date": "2026-02-10",
+        "end_date": "2027-02-09",
+        "status": "cancelled"
+    },
+    {
+        "sub_id": "S006",
+        "member_id": "randomid",
+        "package_id": "p001",
+        "start_date": "123",
+        "end_date": "123",
+        "status": "expired"
+    },
+    {
+        "sub_id": "S007",
+        "member_id": "M005",
+        "package_id": "P003",
+        "start_date": "2026-01-01",
+        "end_date": "2027-01-01",
+        "status": "cancelled"
+    }
+]

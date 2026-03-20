@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment — do NOT commit this
+.venv/
+venv/
+env/
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Session token
+.session_token.json
+
+# Dataset faces (binary images — large, optional to exclude)
+dataset/faces/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Compiled UI (can be regenerated with pyuic6)
+# Uncomment if you prefer to not commit generated files:
+# ui/Login.py
+# ui/Register.py
+# ui/MainWindow.py
+
+# SQLite databases (if any)
+*.db
+*.sqlite3
+
+# Logs
+*.log

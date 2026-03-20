@@ -1,0 +1,18 @@
+[
+    {
+        "plan_id": "PL001",
+        "member_id": "M001",
+        "trainer_id": "T001",
+        "goal": "Build muscle mass",
+        "weekly_schedule_json": "{\"Mon\":\"Chest\",\"Wed\":\"Back\",\"Fri\":\"Legs\"}",
+        "notes": "Focus on compound lifts"
+    },
+    {
+        "plan_id": "PL002",
+        "member_id": "M004",
+        "trainer_id": "T002",
+        "goal": "Improve flexibility and core strength",
+        "weekly_schedule_json": "{\"Tue\":\"Yoga\",\"Thu\":\"Core\",\"Sat\":\"Full body\"}",
+        "notes": "Beginner level, build gradually"
+    }
+]
