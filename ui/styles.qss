@@ -1,0 +1,292 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   Gym Manager — Modern SaaS Theme
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+QWidget {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #e2e8f0;
+}
+
+QLabel,
+QPushButton,
+QComboBox,
+QLineEdit,
+QTableWidget {
+    color: #e2e8f0;
+}
+
+QMainWindow {
+    background-color: #283140;
+}
+
+QDialog#LoginDialog {
+    background-color: transparent;
+}
+
+QWidget#centralWidget {
+    background: transparent;
+}
+
+#overlayWidget {
+    background-color: transparent;
+}
+
+/* ── Sidebar ───────────────────────────────────────────────────────────────── */
+QFrame#sidebar {
+    background-color: #B0EFCD; /* Mint Sidebar */
+    border-right: none;
+}
+
+QLabel#brandLabel {
+    color: #111827;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px 0px 10px 10px;
+}
+
+QFrame#userPill {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+QLabel#userNameLabel {
+    color: #111827;
+    font-weight: 600;
+}
+
+QLabel#userRoleLabel {
+    color: #111827;
+}
+
+QLabel#navSectionLabel {
+    color: #111827;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+/* ── Nav Buttons ───────────────────────────────────────────────────────────── */
+QPushButton#navBtn, QPushButton#btnDashboard, QPushButton#btnMembers, QPushButton#btnPackages, 
+QPushButton#btnSubscriptions, QPushButton#btnCheckins, QPushButton#btnPayments, 
+QPushButton#btnTrainers, QPushButton#btnPlans, QPushButton#btnReports, QPushButton#btnLogout {
+    background-color: transparent;
+    color: #111827;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px 18px;
+    min-height: 48px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+QPushButton#navBtn:hover, QPushButton#btnDashboard:hover, QPushButton#btnMembers:hover, 
+QPushButton#btnPackages:hover, QPushButton#btnSubscriptions:hover, QPushButton#btnCheckins:hover, 
+QPushButton#btnPayments:hover, QPushButton#btnTrainers:hover, QPushButton#btnPlans:hover, 
+QPushButton#btnReports:hover, QPushButton#btnLogout:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+QPushButton#navBtn:checked, QPushButton#navBtn[active="true"],
+QPushButton#btnDashboard:checked, QPushButton#btnMembers:checked, QPushButton#btnPackages:checked, 
+QPushButton#btnSubscriptions:checked, QPushButton#btnCheckins:checked, QPushButton#btnPayments:checked, 
+QPushButton#btnTrainers:checked, QPushButton#btnPlans:checked, QPushButton#btnReports:checked {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #111827;
+    font-weight: 700;
+}
+
+/* ── Main Top Bar ──────────────────────────────────────────────────────────── */
+QLabel#pageTitleLabel {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ── Dashboard Cards & Containers ──────────────────────────────────────────── */
+QFrame#card, QGroupBox#card {
+    background-color: #B0EFCD; /* Mint cards */
+    border-radius: 20px;
+    padding: 14px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+QFrame#bottomCard, QGroupBox#bottomCard {
+    background-color: #1E2532; /* Dark Slate Cards */
+    border-radius: 20px;
+    padding: 14px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Force specific colors in case inline styles try to override */
+QFrame#card QLabel {
+    color: #111827; /* Dark text on cyan background */
+}
+
+/* Specific overrides for numbers / title labels if needed */
+.statNumber {
+    font-size: 26px;
+    font-weight: bold;
+    color: #00E5C3 !important;
+}
+
+.statLabel {
+    color: #374151 !important;
+}
+
+QFrame#card:hover QLabel {
+    color: #0a0a0a !important;
+}
+
+/* Make sure the main workspace background area is transparent so the bg image shows through */
+QStackedWidget {
+    background: transparent;
+}
+QStackedWidget > QWidget {
+    background: transparent;
+}
+
+/* ── Typography & Forms ────────────────────────────────────────────────────── */
+QLineEdit, QTextEdit, QPlainTextEdit, QComboBox, QDateEdit, QSpinBox, QDoubleSpinBox {
+    background-color: #1E2532;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding-left: 10px;
+    color: #e2e8f0;
+    font-size: 13px;
+    height: 38px;
+}
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus, QComboBox:focus, QDateEdit:focus {
+    border: 1px solid #B0EFCD;
+    background-color: #181E29;
+}
+
+QComboBox::drop-down { border: none; width: 30px; }
+QComboBox::down-arrow { image: none; border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #ffffff; margin-right: 10px; }
+QComboBox QAbstractItemView { background-color: #1E2532; border-radius: 8px; color: #e2e8f0; selection-background-color: rgba(176, 239, 205, 0.15); selection-color: #B0EFCD; }
+
+QPushButton#primaryBtn, QPushButton.primaryBtn {
+    background-color: #B0EFCD;
+    color: #111827;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    min-height: 40px;
+}
+QPushButton#primaryBtn:hover, QPushButton.primaryBtn:hover {
+    background-color: #96EBBF;
+}
+QPushButton#primaryBtn:pressed, QPushButton.primaryBtn:pressed {
+    background-color: #7ED9A8;
+}
+
+QPushButton#secondaryBtn {
+    background-color: #1E2532;
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    min-height: 40px;
+}
+QPushButton#secondaryBtn:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+QPushButton#dangerBtn {
+    background-color: #1E2532;
+    color: #FCA5A5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    min-height: 40px;
+}
+QPushButton#dangerBtn:hover {
+    background-color: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #ffffff;
+}
+
+/* ── Table Widget ──────────────────────────────────────────────────────────── */
+QTableWidget {
+    background-color: #1E2532;
+    alternate-background-color: #181E29; 
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    gridline-color: transparent;
+    color: #e2e8f0;
+    selection-background-color: rgba(176, 239, 205, 0.15);
+    selection-color: #B0EFCD;
+    outline: none;
+}
+QTableWidget::item { padding: 12px; border: none; border-bottom: 1px solid rgba(255, 255, 255, 0.02); }
+QTableWidget::item:selected { background-color: rgba(176, 239, 205, 0.15); color: #B0EFCD; font-weight: 600; }
+QHeaderView::section {
+    background-color: #B0EFCD;
+    color: #111827;
+    border: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    font-weight: bold;
+    font-size: 13px;
+}
+QHeaderView::section:vertical {
+    border-bottom: none;
+    border-right: none;
+    background-color: transparent;
+    color: #475569;
+}
+QTableWidget::corner-button { background: transparent; }
+
+/* ── Scroll Bars ───────────────────────────────────────────────────────────── */
+QScrollBar:vertical { background: transparent; width: 8px; margin: 0; }
+QScrollBar::handle:vertical { background: rgba(255, 255, 255, 0.2); border-radius: 4px; min-height: 30px; }
+QScrollBar::handle:vertical:hover { background: rgba(255, 255, 255, 0.4); }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+
+QScrollBar:horizontal { background: transparent; height: 8px; margin: 0; }
+QScrollBar::handle:horizontal { background: rgba(255, 255, 255, 0.2); border-radius: 4px; min-width: 30px; }
+QScrollBar::handle:horizontal:hover { background: rgba(255, 255, 255, 0.4); }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0; }
+
+/* ── Misc ──────────────────────────────────────────────────────────────────── */
+QTabWidget::pane { background-color: transparent; border: none; }
+QTabBar::tab { background-color: rgba(255, 255, 255, 0.05); color: #b8c2cc; padding: 10px 20px; font-weight: 600; border-top-left-radius: 10px; border-top-right-radius: 10px; }
+QTabBar::tab:selected { background-color: rgba(20, 30, 48, 220); color: #ffffff; }
+
+QMessageBox { background-color: #0F172A; } QMessageBox QLabel { color: #ffffff; }
+
+/* ── Login Extras ──────────────────────────────────────────────────────────── */
+QFrame#loginCard, QDialog#RegisterDialog {
+    background-color: #1E2532;
+    border-radius: 16px;
+    padding: 40px;
+}
+QLabel#topTitleLabel { font-size: 42px; font-weight: 900; color: #ffffff; }
+QLabel#titleLabel { font-size: 34px; font-weight: 800; color: #B0EFCD; }
+QLabel#subTitleLabel { font-size: 22px; color: #b8c2cc; }
+QPushButton#signInButton, QPushButton#createButton {
+    background-color: #B0EFCD;
+    color: #111827;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 22px;
+    font-weight: 800;
+    font-size: 16px;
+}
+QPushButton#signInButton:hover, QPushButton#createButton:hover { background-color: #96EBBF; }
+QPushButton#registerButton, QPushButton#backButton { color: #B0EFCD; border: none; background: transparent; font-size: 15px; text-decoration: underline; }
+
+/* Forms specific */
+QDialog QLabel { color: #b8c2cc; }
