@@ -1,0 +1,26 @@
+[
+    {
+        "package_id": "P001",
+        "name": "Monthly Basic",
+        "duration_unit": "months",
+        "duration_value": 1,
+        "price": 299000,
+        "description": "1-month gym access, all equipment"
+    },
+    {
+        "package_id": "P002",
+        "name": "Quarterly Plus",
+        "duration_unit": "months",
+        "duration_value": 3,
+        "price": 799000,
+        "description": "3-month access + 1 free PT session"
+    },
+    {
+        "package_id": "P003",
+        "name": "Annual Premium",
+        "duration_unit": "months",
+        "duration_value": 12,
+        "price": 2500000,
+        "description": "12-month unlimited access + weekly PT"
+    }
+]
