@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'ui\Login.ui'
+# Form implementation generated from reading ui file 'ui/Login.ui'
 #
 # Created by: PyQt6 UI code generator 6.10.2
 #
@@ -29,6 +29,7 @@ class Ui_LoginDialog(object):
         self.hboxlayout.setObjectName("hboxlayout")
         self.loginCard = QtWidgets.QFrame(parent=LoginDialog)
         self.loginCard.setMaximumSize(QtCore.QSize(420, 16777215))
+        self.loginCard.setMinimumSize(QtCore.QSize(0, 450))
         self.loginCard.setObjectName("loginCard")
         self.loginCardLayout = QtWidgets.QVBoxLayout(self.loginCard)
         self.loginCardLayout.setSpacing(16)
@@ -50,12 +51,14 @@ class Ui_LoginDialog(object):
         self.usernameLabel.setObjectName("usernameLabel")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.ItemRole.LabelRole, self.usernameLabel)
         self.usernameInput = QtWidgets.QLineEdit(parent=self.loginCard)
+        self.usernameInput.setMinimumSize(QtCore.QSize(0, 38))
         self.usernameInput.setObjectName("usernameInput")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.ItemRole.FieldRole, self.usernameInput)
         self.passwordLabel = QtWidgets.QLabel(parent=self.loginCard)
         self.passwordLabel.setObjectName("passwordLabel")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.ItemRole.LabelRole, self.passwordLabel)
         self.passwordInput = QtWidgets.QLineEdit(parent=self.loginCard)
+        self.passwordInput.setMinimumSize(QtCore.QSize(0, 38))
         self.passwordInput.setEchoMode(QtWidgets.QLineEdit.EchoMode.Password)
         self.passwordInput.setObjectName("passwordInput")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.ItemRole.FieldRole, self.passwordInput)
@@ -63,6 +66,7 @@ class Ui_LoginDialog(object):
         self.roleLabel.setObjectName("roleLabel")
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.ItemRole.LabelRole, self.roleLabel)
         self.roleCombo = QtWidgets.QComboBox(parent=self.loginCard)
+        self.roleCombo.setMinimumSize(QtCore.QSize(0, 38))
         self.roleCombo.setObjectName("roleCombo")
         self.roleCombo.addItem("")
         self.roleCombo.addItem("")
@@ -111,5 +115,5 @@ class Ui_LoginDialog(object):
         self.roleLabel.setText(_translate("LoginDialog", "Role:"))
         self.roleCombo.setItemText(0, _translate("LoginDialog", "Admin"))
         self.roleCombo.setItemText(1, _translate("LoginDialog", "Staff"))
-        self.signInButton.setText(_translate("LoginDialog", "SIGN IN  →"))
-        self.registerButton.setText(_translate("LoginDialog", "DON\'T HAVE AN ACCOUNT ? REGISTER"))
+        self.signInButton.setText(_translate("LoginDialog", "Sign in  →"))
+        self.registerButton.setText(_translate("LoginDialog", "Don\'t have an account ? Register"))
