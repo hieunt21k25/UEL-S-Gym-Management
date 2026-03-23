@@ -159,7 +159,7 @@ QLineEdit, QTextEdit, QPlainTextEdit, QComboBox, QDateEdit, QSpinBox, QDoubleSpi
     padding-left: 10px;
     color: #e2e8f0;
     font-size: 13px;
-    min-height: 38px;
+    height: 38px;
 }
 QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus, QComboBox:focus, QDateEdit:focus {
     border: 1px solid #B0EFCD;

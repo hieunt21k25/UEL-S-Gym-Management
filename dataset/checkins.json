@@ -28,30 +28,5 @@
         "checkin_id": "CI0006",
         "member_id": "M005",
         "timestamp": "2026-02-24T15:21:00"
-    },
-    {
-        "checkin_id": "CI0007",
-        "member_id": "M005",
-        "timestamp": "2026-03-21T21:19:13"
-    },
-    {
-        "checkin_id": "CI0008",
-        "member_id": "M005",
-        "timestamp": "2026-03-21T21:22:48"
-    },
-    {
-        "checkin_id": "CI0009",
-        "member_id": "M005",
-        "timestamp": "2026-03-21T21:34:26"
-    },
-    {
-        "checkin_id": "CI0010",
-        "member_id": "M005",
-        "timestamp": "2026-03-21T21:34:35"
-    },
-    {
-        "checkin_id": "CI0011",
-        "member_id": "M005",
-        "timestamp": "2026-03-21T21:35:24"
     }
 ]

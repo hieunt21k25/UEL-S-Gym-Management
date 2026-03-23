@@ -37,18 +37,6 @@ class DataConnector:
         for u in self.get_all_users():
             if u.username == username and u.password == password:
                 return u
-        # Fallback to check employees.json for staff accounts
-        try:
-            from libs.FileFactory import JsonFileFactory
-            from model.Employee import Employee
-            emps = JsonFileFactory().read_data(self._p("employees.json"), Employee)
-            for e in emps:
-                if getattr(e, "UserName", "") == username and getattr(e, "Password", "") == password:
-                    from model.User import User
-                    # Construct a User object so the app sees a unified structure
-                    return User(getattr(e, "EmployeeId", ""), getattr(e, "UserName", ""), "", getattr(e, "Password", ""), str(getattr(e, "EmployeeRole", "")).lower())
-        except Exception:
-            pass
         return None
 
     def register(self, username: str, email: str, password: str, role: str) -> User | None:

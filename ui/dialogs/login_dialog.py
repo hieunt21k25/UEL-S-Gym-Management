@@ -2,7 +2,6 @@
 ui/dialogs/login_dialog.py — DataConnector auth (JSON-based).
 """
 from __future__ import annotations
-from pathlib import Path
 from PyQt6.QtWidgets import QDialog
 from ui.Login import Ui_LoginDialog
 from libs.DataConnector import DataConnector
@@ -25,8 +24,7 @@ class LoginDialog(QDialog):
         self.bg_label = QLabel(self)
         self.bg_label.setScaledContents(False)
         self.bg_label.lower()
-        _bg_path = str(Path(__file__).resolve().parent.parent / "ui" / "bg.png")
-        self.bg_pixmap = QPixmap(_bg_path)
+        self.bg_pixmap = QPixmap("ui/bg.png")
         if not self.bg_pixmap.isNull():
             self.bg_label.setPixmap(self.bg_pixmap.scaled(
                 self.size(),
@@ -51,18 +49,8 @@ class LoginDialog(QDialog):
         if not username or not password:
             self.ui.errorLabel.setText("Please enter username and password.")
             return
-
-        selected_role = self.ui.roleCombo.currentText().lower()  # "admin" or "staff"
-
         user = DataConnector().login(username, password)
         if user:
-            actual_role = str(user.role).lower()
-            if actual_role != selected_role:
-                self.ui.errorLabel.setText(
-                    f"Access denied: your account role is '{actual_role.capitalize()}', "
-                    f"not '{selected_role.capitalize()}'."
-                )
-                return
             self.logged_in_user = user
             self.ui.errorLabel.setText("")
             self.accept()

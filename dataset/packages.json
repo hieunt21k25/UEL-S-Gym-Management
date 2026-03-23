@@ -19,8 +19,8 @@
         "package_id": "P003",
         "name": "Annual Premium",
         "duration_unit": "months",
-        "duration_value": "12",
-        "price": "2500000",
+        "duration_value": 12,
+        "price": 2500000,
         "description": "12-month unlimited access + weekly PT"
     }
 ]
