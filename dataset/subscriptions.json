@@ -46,5 +46,13 @@
         "start_date": "2026-01-01",
         "end_date": "2027-01-01",
         "status": "cancelled"
+    },
+    {
+        "sub_id": "S008",
+        "member_id": "M005",
+        "package_id": "P003",
+        "start_date": "2026-03-20",
+        "end_date": "2027-03-20",
+        "status": "active"
     }
 ]

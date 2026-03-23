@@ -1,0 +1,57 @@
+[
+    {
+        "checkin_id": "CI0001",
+        "member_id": "M001",
+        "timestamp": "2026-02-20T08:30:00"
+    },
+    {
+        "checkin_id": "CI0002",
+        "member_id": "M002",
+        "timestamp": "2026-02-20T09:00:00"
+    },
+    {
+        "checkin_id": "CI0003",
+        "member_id": "M001",
+        "timestamp": "2026-02-21T07:45:00"
+    },
+    {
+        "checkin_id": "CI0004",
+        "member_id": "M004",
+        "timestamp": "2026-02-22T10:00:00"
+    },
+    {
+        "checkin_id": "CI0005",
+        "member_id": "M001",
+        "timestamp": "2026-02-24T08:00:00"
+    },
+    {
+        "checkin_id": "CI0006",
+        "member_id": "M005",
+        "timestamp": "2026-02-24T15:21:00"
+    },
+    {
+        "checkin_id": "CI0007",
+        "member_id": "M005",
+        "timestamp": "2026-03-21T21:19:13"
+    },
+    {
+        "checkin_id": "CI0008",
+        "member_id": "M005",
+        "timestamp": "2026-03-21T21:22:48"
+    },
+    {
+        "checkin_id": "CI0009",
+        "member_id": "M005",
+        "timestamp": "2026-03-21T21:34:26"
+    },
+    {
+        "checkin_id": "CI0010",
+        "member_id": "M005",
+        "timestamp": "2026-03-21T21:34:35"
+    },
+    {
+        "checkin_id": "CI0011",
+        "member_id": "M005",
+        "timestamp": "2026-03-21T21:35:24"
+    }
+]

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReportsPage</class>
+ <widget class="QWidget" name="ReportsPage">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>900</width><height>600</height></rect></property>
+  <property name="windowTitle"><string>Reports &amp; Analytics</string></property>
+
+  <layout class="QVBoxLayout" name="mainLayout">
+   <property name="spacing"><number>16</number></property>
+   <property name="leftMargin"><number>0</number></property><property name="topMargin"><number>0</number></property>
+   <property name="rightMargin"><number>0</number></property><property name="bottomMargin"><number>0</number></property>
+
+   <!-- Export buttons -->
+   <item>
+    <layout class="QHBoxLayout" name="exportRow">
+     <property name="spacing"><number>12</number></property>
+     <item><widget class="QPushButton" name="exportPaymentsButton"><property name="text"><string>📥  Export Payments CSV</string></property></widget></item>
+     <item><widget class="QPushButton" name="exportCheckinsButton"><property name="text"><string>📥  Export Check-ins CSV</string></property></widget></item>
+     <item><spacer><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>0</height></size></property></spacer></item>
+    </layout>
+   </item>
+
+   <!-- Summary cards -->
+   <item>
+    <widget class="QFrame" name="summaryCard">
+     <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+     <layout class="QHBoxLayout" name="summaryLayout">
+      <property name="leftMargin"><number>24</number></property><property name="topMargin"><number>18</number></property>
+      <property name="rightMargin"><number>24</number></property><property name="bottomMargin"><number>18</number></property>
+      <property name="spacing"><number>36</number></property>
+
+      <item>
+       <layout class="QVBoxLayout">
+        <item><widget class="QLabel" name="lblActiveMembersValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>24</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblActiveMembersTitle"><property name="text"><string>👥  Active Members</string></property></widget></item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout">
+        <item><widget class="QLabel" name="lblActiveSubsValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>24</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblActiveSubsTitle"><property name="text"><string>🔑  Active Subs</string></property></widget></item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout">
+        <item><widget class="QLabel" name="lblExpiredValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>24</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblExpiredTitle"><property name="text"><string>⏰  Expired Subs</string></property></widget></item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout">
+        <item><widget class="QLabel" name="lblCheckinsValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>24</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblCheckinsTitle"><property name="text"><string>✅  Today Check-ins</string></property></widget></item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout">
+        <item><widget class="QLabel" name="lblRevenueValue"><property name="text"><string>—</string></property><property name="font"><font><family>Segoe UI</family><pointsize>24</pointsize><weight>87</weight></font></property></widget></item>
+        <item><widget class="QLabel" name="lblRevenueTitle"><property name="text"><string>💰  Total Revenue</string></property></widget></item>
+       </layout>
+      </item>
+
+     </layout>
+    </widget>
+   </item>
+
+   <!-- Revenue chart area -->
+   <item>
+    <widget class="QFrame" name="chartCard">
+     <property name="frameShape"><enum>QFrame::StyledPanel</enum></property>
+     <layout class="QVBoxLayout" name="chartLayout">
+      <property name="leftMargin"><number>20</number></property><property name="topMargin"><number>16</number></property>
+      <property name="rightMargin"><number>20</number></property><property name="bottomMargin"><number>16</number></property>
+      <item><widget class="QLabel" name="chartTitle"><property name="text"><string>📊  Monthly Revenue</string></property><property name="font"><font><family>Segoe UI</family><pointsize>13</pointsize><weight>75</weight><bold>true</bold></font></property></widget></item>
+      <!-- Chart canvas inserted at runtime by ReportsPage.refresh() -->
+     </layout>
+    </widget>
+   </item>
+
+   <item>
+    <widget class="QLabel" name="statusLabel"><property name="text"><string/></property></widget>
+   </item>
+
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

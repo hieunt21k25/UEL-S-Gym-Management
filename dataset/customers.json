@@ -1,0 +1,23 @@
+[
+    {
+        "customer_code": "C001",
+        "customer_name": "Nguyen Van A",
+        "customer_phone": "0901234567",
+        "customer_email": "vana@email.com",
+        "customer_identity": "001234567890"
+    },
+    {
+        "customer_code": "C002",
+        "customer_name": "Tran Thi B",
+        "customer_phone": "0912345678",
+        "customer_email": "thib@email.com",
+        "customer_identity": "001234567891"
+    },
+    {
+        "customer_code": "C003",
+        "customer_name": "Le Van C",
+        "customer_phone": "0923456789",
+        "customer_email": "vanc@email.com",
+        "customer_identity": "001234567892"
+    }
+]

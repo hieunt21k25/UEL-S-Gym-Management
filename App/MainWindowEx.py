@@ -34,7 +34,7 @@ class MainWindowEx(QMainWindow):
         self.bg_label = QLabel(self)
         self.bg_label.setScaledContents(False)
         self.bg_label.lower()
-        self.bg_pixmap = QPixmap("ui/new_bg2.jpg")
+        self.bg_pixmap = QPixmap(str(PROJECT_ROOT / "ui" / "new_bg2.jpg"))
         if not self.bg_pixmap.isNull():
             self.bg_label.setPixmap(self.bg_pixmap.scaled(
                 self.size(),
@@ -47,6 +47,11 @@ class MainWindowEx(QMainWindow):
             effect = QGraphicsOpacityEffect()
             effect.setOpacity(0.35)
             self.bg_label.setGraphicsEffect(effect)
+
+        # Check if user is staff
+        is_staff = self._user and str(self._user.role).lower() == "staff"
+
+        from PyQt6.QtWidgets import QPushButton
 
         pages = [
             (self.ui.btnDashboard,     DashboardPage(),     "Dashboard"),
@@ -61,9 +66,23 @@ class MainWindowEx(QMainWindow):
         ]
         self._pages = pages
         for _, page, _ in pages:
+            # Pass user to page for deep conditional checks (e.g. package price)
+            page.user = self._user
             self.ui.stackedWidget.addWidget(page)
+            # Restrict "delete important data" and "export csv" globally
+            if is_staff:
+                for btn in page.findChildren(QPushButton):
+                    txt = btn.text()
+                    if "Delete" in txt or "Export" in txt:
+                        btn.setVisible(False)
+                    if isinstance(page, PackagesPage) and ("Edit" in txt or "Add Package" in txt):
+                        btn.setVisible(False)
+
         for idx, (btn, _, title) in enumerate(pages):
             btn.clicked.connect(lambda _, i=idx, t=title: self._navigate(i, t))
+
+        if is_staff:
+            self.ui.btnReports.setVisible(False)
 
         self.ui.btnLogout.clicked.connect(self._logout)
 

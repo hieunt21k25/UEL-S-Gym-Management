@@ -4,20 +4,29 @@
         "full_name": "Hoang Van Minh",
         "phone": "0941234567",
         "specialty": "Strength & Conditioning",
-        "availability_schedule": "Mon-Fri 06:00-12:00"
+        "availability_schedule": "Mon-Fri 06:00-12:00",
+        "experience_years": 8,
+        "total_trainees": 150,
+        "rating": 4.9
     },
     {
         "trainer_id": "T002",
         "full_name": "Nguyen Thi Lan",
         "phone": "0952345678",
         "specialty": "Yoga & Flexibility",
-        "availability_schedule": "Tue-Thu-Sat 08:00-17:00"
+        "availability_schedule": "Tue-Thu-Sat 08:00-17:00",
+        "experience_years": 6,
+        "total_trainees": 200,
+        "rating": 5.0
     },
     {
         "trainer_id": "T003",
         "full_name": "Nguyen Trung Hieu",
         "phone": "0377323123",
         "specialty": "Strength",
-        "availability_schedule": "Mon-Fri 06:00-13:00"
+        "availability_schedule": "Mon-Fri 06:00-13:00",
+        "experience_years": 5,
+        "total_trainees": 120,
+        "rating": 4.8
     }
 ]
